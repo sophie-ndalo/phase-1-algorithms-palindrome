@@ -1,7 +1,20 @@
+function reverse(word){
+  const wordArray = word.split("");
+  const reversedWordArray = wordArray.reverse("");
+  const reverseWord = reversedWordArray.join("");
+  return reverseWord;
+}
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  //if word is the same as return function it should return true else return false.
+ const reverseWord = reverse(word);
 
+ if(word===reverseWord){
+  return true;
+ }else{
+  return false;
+ }
+}
 /* 
   Add your pseudocode here
 */
@@ -23,3 +36,4 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
